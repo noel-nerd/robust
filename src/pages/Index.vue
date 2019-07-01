@@ -1,6 +1,19 @@
 <template>
-  <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+  <q-page class="">
+    <div class="row">
+
+      <q-input class="col-6 q-pa-sm"
+        v-model="text"
+        filled
+        type="textarea"
+      />
+      <q-input class="col-6 q-pa-sm"
+        v-model="text"
+        filled
+        type="textarea"
+      />
+    </div>
+
   </q-page>
 </template>
 
@@ -9,6 +22,14 @@
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  data () {
+    return {
+      text: 'oi'
+    }
+  },
+  methods: {
+
+  }
 }
 </script>
